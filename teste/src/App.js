@@ -1,10 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Frase from './components/Frase';
+import DigaMeuNome from './components/DigaMeuNome';
+import Pessoa from './components/Pessoa'
 
 function App() {
-  return (
+  const nome = "Rabelo"
+   return ( 
     <div className="App">
-        <h1>Meu primeiro react</h1>
+
+        <h1>MEU PRIMEIRO REACT</h1>
+        <Frase />
+        <HelloWorld/>
+        <Frase />
+        <DigaMeuNome nome = "João Henrique"/>
+        <DigaMeuNome nome = {nome}/>
+        <Pessoa
+          nome="Joao"
+          idade = "16"
+          foto = "https://placehold.co/150"
+        />
+  
     </div>
   );
 }
