@@ -1,28 +1,17 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
-import Frase from './components/Frase';
-import DigaMeuNome from './components/DigaMeuNome';
-import Pessoa from './components/Pessoa'
+import Evento from './components/Evento';
+import Formulario from './components/Formulario';
 
-function App() {
-  const nome = "Rabelo"
-   return ( 
-    <div className="App">
+function App(){
+  return(
+    <div className = "App">
+      <h1>Testando Eventos</h1>
+      <Evento numero = "1"/>
+      <Evento numero = "2"/>
+      <Formulario/>
 
-        <h1>MEU PRIMEIRO REACT</h1>
-        <Frase />
-        <HelloWorld/>
-        <Frase />
-        <DigaMeuNome nome = "João Henrique"/>
-        <DigaMeuNome nome = {nome}/>
-        <Pessoa
-          nome="Joao"
-          idade = "16"
-          foto = "https://placehold.co/150"
-        />
-  
     </div>
-  );
+  )
 }
 
 export default App;
