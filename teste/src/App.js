@@ -9,7 +9,7 @@ function App(){
       <Evento numero = "1"/>
       <Evento numero = "2"/>
       <Formulario/>
-
+    
     </div>
   )
 }
